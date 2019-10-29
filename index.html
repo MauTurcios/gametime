@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf8">   
+		<!--Import Google Icon Font-->
+		<link href="css/icon.css" rel="stylesheet">
+		<!--Import materialize.css-->
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/mycss.css">
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="js/materialize.min.js"></script>
+    </head> 
+    <body> 
+<nav>
+    <div class="nav-wrapper">
+    <center>  <a href="# " class="brand-logo" target="">Juegos</a></center>
+      
+    </div>
+  </nav>
+<!-- Gitter Chat Link -->
+    <body>
+		<h1>CATEGORÍA</h1>
+        <div class="row">
+            <form class="col s12">			
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="juego" type="text" class="validate">
+                        <label for="juego">Juego</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="plataforma" >
+						<option for="plataforma" value="opcion1"readonly>PC</option>
+						<option for="plataforma" value="opcion1">PC</option>
+						<option for="plataforma" value="opcion2">Nintendo Switch</option>
+						<option for="plataforma" value="opcion3">Ps4</option>
+						<option for="plataforma" value="opcion6">WiiU</option>
+						</select>
+						<label style="text-align:center;" for="plataforma">Plataforma</label>
+                    </div>
+					<div class="input-field col s6">
+                        <input id="dia" type="date" class="validate">
+						<label style="text-align:center;" for="dia">Fecha</label>
+                    </div>
+					<div class="input-field col s6">
+                        <input id="inicio" type="time" class="validate">
+						<label style="text-align:center;" for="inicio">Hora de Inicio</label>
+                    </div>
+					<div class="input-field col s6">
+                        <input id="fin" type="time" class="validate">
+						<label style="text-align:center;" for="fin">Hora de Fin</label>
+                    </div>
+                </div> 
+                 
+                <div class="row">
+                    <a class="waves-effect waves-light btn" onclick="registrar()">Registrar</a>
+                </div>
+            </form>
+        </div>
+
+        <!--Import jQuery before materialize.js--> 
+        <script type="text/javascript">
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+  
+ 
+function registrar() {
+    //var deviceID = http://proyectoagg.eshost.com.ar/proyecto/;
+    var agg = "http://proyectoagg.dx.am/file/agregar.php";
+	
+    var juego = document.getElementById("juego").value;
+    var plataforma = document.getElementById("plataforma").value;
+    var dia = document.getElementById("dia").value;     
+	var inicio = document.getElementById("inicio").value;  
+	var fin = document.getElementById("fin").value;
+    
+    var parametros ="&juego="+juego+"&plataforma=" + plataforma + "&dia=" + dia +"&inicio=" + inicio+" &fin=" + fin;
+	
+    var http = new XMLHttpRequest();// request http funciones de interaccion con la web
+    http.open("POST", agg, true); // false for synchronous request
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    http.send(parametros);
+    Materialize.toast('Sus Datos Fueron Enviados!', 4000);
+}
+
+			// SIDEBAR
+$(document).ready(function(){
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    }
+  );
+  // START OPEN
+  $('.button-collapse').sideNav('');
+});
+
+        </script>
+    </body>
+    
+</html>
