@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<meta charset="utf8">   
-		<!--Import Google Icon Font-->
-		<link href="css/icon.css" rel="stylesheet">
-		<!--Import materialize.css-->
-		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="css/materialize.min.css">
-		<link rel="stylesheet" href="css/mycss.css">
+        <meta charset="utf8">   
+        <!--Import Google Icon Font-->
+        <link href="css/icon.css" rel="stylesheet">
+        <!--Import materialize.css-->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/mycss.css">
 
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 
-		<!-- Compiled and minified JavaScript -->
-		<script src="js/materialize.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="js/materialize.min.js"></script>
     </head> 
     <body> 
 <nav>
@@ -25,40 +25,96 @@
   </nav>
 <!-- Gitter Chat Link -->
     <body>
-		<h1>CATEGORÍA</h1>
+        <center><h1>Ingresar Datos</h1></center>
         <div class="row">
-            <form class="col s12">			
+            <form id="form"class="col s12" autocomplete>            
                 <div class="row">
+                <div class="input-field col s6">
+                        <select id="user" >
+                        <option for="user" value="Jennifer">Jennifer</option>
+                        <option for="user" value="Oscar">Oscar</option>
+                        <option for="user" value="Mauricio">Mauricio</option>
+                        </select>
+                        <label style="text-align:center;" for="user">Usuario</label>
+                    </div>
                     <div class="input-field col s6">
                         <input id="juego" type="text" class="validate">
                         <label for="juego">Juego</label>
                     </div>
                     <div class="input-field col s6">
                         <select id="plataforma" >
-						<option for="plataforma" value="opcion1"readonly>PC</option>
-						<option for="plataforma" value="opcion1">PC</option>
-						<option for="plataforma" value="opcion2">Nintendo Switch</option>
-						<option for="plataforma" value="opcion3">Ps4</option>
-						<option for="plataforma" value="opcion6">WiiU</option>
-						</select>
-						<label style="text-align:center;" for="plataforma">Plataforma</label>
+                        <option for="plataforma" value="PC">PC</option>
+                        <option for="plataforma" value="Nintendo Switch">Nintendo Switch</option>
+                        <option for="plataforma" value="Ps4">Ps4</option>
+                        <option for="plataforma" value="WiiU">WiiU</option>
+                        <option for="plataforma" value="Otro">Otro</option>
+                        </select>
+                        <label style="text-align:center;" for="plataforma">Plataforma</label>
                     </div>
-					<div class="input-field col s6">
+                    <div class="input-field col s6">
+                        <select id="plataforma" >
+                        <option for="plataforma" value="PC">PC</option>
+                        <option for="plataforma" value="Nintendo Switch">Nintendo Switch</option>
+                        <option for="plataforma" value="Ps4">Ps4</option>
+                        <option for="plataforma" value="WiiU">WiiU</option>
+                        <option for="plataforma" value="Otro">Otro</option>
+                        </select>
+                        <label style="text-align:center;" for="plataforma">Plataforma</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="plataforma" >
+                        <option for="plataforma" value="PC">PC</option>
+                        <option for="plataforma" value="Nintendo Switch">Nintendo Switch</option>
+                        <option for="plataforma" value="Ps4">Ps4</option>
+                        <option for="plataforma" value="WiiU">WiiU</option>
+                        <option for="plataforma" value="Otro">Otro</option>
+                        </select>
+                        <label style="text-align:center;" for="plataforma">Plataforma</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="plataforma" >
+                        <option for="plataforma" value="PC">PC</option>
+                        <option for="plataforma" value="Nintendo Switch">Nintendo Switch</option>
+                        <option for="plataforma" value="Ps4">Ps4</option>
+                        <option for="plataforma" value="WiiU">WiiU</option>
+                        <option for="plataforma" value="Otro">Otro</option>
+                        </select>
+                        <label style="text-align:center;" for="plataforma">Plataforma</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="plataforma" >
+                        <option for="plataforma" value="PC">PC</option>
+                        <option for="plataforma" value="Nintendo Switch">Nintendo Switch</option>
+                        <option for="plataforma" value="Ps4">Ps4</option>
+                        <option for="plataforma" value="WiiU">WiiU</option>
+                        <option for="plataforma" value="Otro">Otro</option>
+                        </select>
+                        <label style="text-align:center;" for="plataforma">Plataforma</label>
+                    </div>
+                    <div class="input-field col s6" visibility="hidden">
+                        <select id="Otro" >
+                        <option for="Otro" value="PUBG Mobile">PUBG Mobile</option>
+                        <option for="Otro" value="Free fire">Free fire</option>
+                        <option for="Otro" value="Fortnite">Fortnite</option>
+                        </select>
+                        <label style="text-align:center;" for="plataforma">Plataforma</label>
+                    </div>
+                    <div class="input-field col s6">
                         <input id="dia" type="date" class="validate">
-						<label style="text-align:center;" for="dia">Fecha</label>
+                        <label style="text-align:center;" for="dia">Fecha</label>
                     </div>
-					<div class="input-field col s6">
+                    <div class="input-field col s6">
                         <input id="inicio" type="time" class="validate">
-						<label style="text-align:center;" for="inicio">Hora de Inicio</label>
+                        <label style="text-align:center;" for="inicio">Hora de Inicio</label>
                     </div>
-					<div class="input-field col s6">
+                    <div class="input-field col s6">
                         <input id="fin" type="time" class="validate">
-						<label style="text-align:center;" for="fin">Hora de Fin</label>
+                        <label style="text-align:center;" for="fin">Hora de Fin</label>
                     </div>
                 </div> 
                  
                 <div class="row">
-                    <a class="waves-effect waves-light btn" onclick="registrar()">Registrar</a>
+                    <a class="waves-effect waves-light btn" onclick="registrar(), limpiarFormulario()">Registrar</a>
                 </div>
             </form>
         </div>
@@ -72,24 +128,26 @@
  
 function registrar() {
     //var deviceID = http://proyectoagg.eshost.com.ar/proyecto/;
-    var agg = "http://proyectoagg.dx.am/file/agregar.php";
-	
+    var agg = "agregar.php";
+    
+    var user = document.getElementById("user").value;
     var juego = document.getElementById("juego").value;
     var plataforma = document.getElementById("plataforma").value;
     var dia = document.getElementById("dia").value;     
-	var inicio = document.getElementById("inicio").value;  
-	var fin = document.getElementById("fin").value;
+    var inicio = document.getElementById("inicio").value;  
+    var fin = document.getElementById("fin").value;
+    var total_horas = (fin - inicio).value
+    var parametros ="&user="+user+"&juego="+juego+"&plataforma=" + plataforma + "&dia=" + dia +"&inicio=" + inicio+" &fin=" + fin+" &total_horas=" + total_horas;
     
-    var parametros ="&juego="+juego+"&plataforma=" + plataforma + "&dia=" + dia +"&inicio=" + inicio+" &fin=" + fin;
-	
     var http = new XMLHttpRequest();// request http funciones de interaccion con la web
     http.open("POST", agg, true); // false for synchronous request
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     http.send(parametros);
     Materialize.toast('Sus Datos Fueron Enviados!', 4000);
+    document.getElementById("form").reset();
 }
 
-			// SIDEBAR
+            // SIDEBAR
 $(document).ready(function(){
   $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
@@ -101,7 +159,6 @@ $(document).ready(function(){
   // START OPEN
   $('.button-collapse').sideNav('');
 });
-
         </script>
     </body>
     
